@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><script>
+    let name=prompt("enter u rname");
+    let age=prompt( name + "enter u r age");
+    age=Number(age);
+    switch(true) {
+        case age <0 || Number.isNaN(age):
+        console.log("invalid");
+        break;
+        case age>=18:
+        console.log("eligible to vote");
+         case age>=65: 
+        console.log("senior");
+        break;
+        case age>13 && age<18:
+            console.log("not");
+            break;
+        default:
+            console.log("no specal");
+
+    }   
+        
+</script>
+    
+</body>
+</html>
